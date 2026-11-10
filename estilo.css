@@ -1,0 +1,204 @@
+/* Configurações gerais */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color: #101827;
+color: #f1f5f9;
+min-height: 100vh;
+transition: 0.3s;
+}
+
+/* Cabeçalho */
+header {
+text-align: center;
+padding: 40px 20px;
+background-color: #1e293b;
+}
+
+header h1 {
+font-size: 32px;
+margin-bottom: 12px;
+color: #60a5fa;
+}
+
+header p {
+color: #cbd5e1;
+margin-bottom: 20px;
+}
+
+/* Conteúdo principal */
+main {
+display: flex;
+justify-content: center;
+padding: 50px 20px;
+}
+
+section {
+background-color: #1e293b;
+width: 100%;
+max-width: 550px;
+padding: 35px;
+border-radius: 12px;
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+margin-bottom: 15px;
+color: #60a5fa;
+}
+
+section p {
+margin-bottom: 25px;
+color: #cbd5e1;
+}
+
+/* Formulário */
+form {
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+label {
+font-weight: bold;
+}
+
+input,
+select {
+padding: 12px;
+border-radius: 6px;
+border: 1px solid #475569;
+background-color: #334155;
+color: white;
+font-size: 15px;
+}
+
+/* Botões */
+button {
+padding: 12px;
+border: none;
+border-radius: 6px;
+background-color: #2563eb;
+color: white;
+font-size: 15px;
+font-weight: bold;
+cursor: pointer;
+transition: 0.3s;
+}
+
+button:hover {
+background-color: #1d4ed8;
+transform: translateY(-2px);
+}
+
+#botaoTema {
+background-color: #475569;
+}
+
+#botaoTema:hover {
+background-color: #64748b;
+}
+
+/* Área de resultado */
+#resultado {
+margin-top: 25px;
+padding: 15px;
+border-radius: 8px;
+line-height: 1.6;
+display: none;
+}
+
+/* Mensagem de erro */
+.mensagem-erro {
+background-color: #7f1d1d;
+border-left: 4px solid #ef4444;
+color: #fecaca;
+}
+
+/* Mensagem de sucesso */
+.mensagem-sucesso {
+background-color: #14532d;
+border-left: 4px solid #22c55e;
+color: #bbf7d0;
+}
+
+/* Tema claro */
+body.tema-claro {
+background-color: #f1f5f9;
+color: #1e293b;
+}
+
+body.tema-claro header,
+body.tema-claro section {
+background-color: #ffffff;
+}
+
+body.tema-claro header p,
+body.tema-claro section p {
+color: #475569;
+}
+
+body.tema-claro input,
+body.tema-claro select {
+background-color: #f8fafc;
+color: #1e293b;
+border-color: #cbd5e1;
+}
+
+body.tema-claro #resultado {
+color: #1e293b;
+}
+
+body.tema-claro .mensagem-erro {
+background-color: #fee2e2;
+border-left-color: #dc2626;
+color: #991b1b;
+}
+
+body.tema-claro .mensagem-sucesso {
+background-color: #dcfce7;
+border-left-color: #16a34a;
+color: #166534;
+}
+
+body.tema-claro #botaoTema {
+background-color: #475569;
+color: white;
+}
+
+/* Rodapé */
+footer {
+text-align: center;
+padding: 20px;
+color: #94a3b8;
+}
+
+body.tema-claro footer {
+color: #64748b;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+
+header h1 {
+font-size: 25px;
+}
+
+main {
+padding: 25px 15px;
+}
+
+section {
+padding: 25px 20px;
+}
+
+button {
+width: 100%;
+}
+
+}
